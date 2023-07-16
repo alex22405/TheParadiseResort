@@ -23,6 +23,7 @@
 body
 {
     font-family: 'CatchyMager';
+    overflow-x: hidden;
 }
 
 .main
