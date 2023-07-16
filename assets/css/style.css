@@ -37,6 +37,7 @@ body
     background-position: center;
     filter: sepia(50%);
     color: white;
+    overflow: hidden;
 }
 
 .main_welcome
@@ -227,6 +228,7 @@ img
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
 }
 
 .customers_reviews span
