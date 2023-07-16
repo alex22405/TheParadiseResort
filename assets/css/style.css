@@ -440,6 +440,10 @@ footer .developed_by, a
     {
         font-size: 14px;
     }
+    .grid_description
+    {
+        padding: 40px;
+    }
     .grid_name
     {
         font-size: 1.5em;
