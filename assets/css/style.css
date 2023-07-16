@@ -383,19 +383,80 @@ footer .developed_by, a
     {
         width: 45%;
     }
+    .col50
+    {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width:768px){
-    .main
+    .main_welcome
     {
-
+        font-size: 1rem;
+    }
+    .main_title
+    {
+        font-size: 4.5rem;
+    }
+    .main_description
+    {
+        font-size: 1.5rem;
+    }
+    .main_button
+    {
+        width: 150px;
+        font-size: 10px;
+    }
+    .col50_title
+    {
+        font-size: 2em;
+    }
+    .col50_text
+    {
+        font-size: 15px;
+    }
+    .accommodations span
+    {
+        font-size: 2em;
     }
     .customers_reviews .col_30
     {
         width: 100%;
     }
+    .room_services .col50
+    {
+        width: 100%;
+    }
+    .promos span
+    {
+        font-size: 2em;
+    }
+    .customers_reviews span
+    {
+        font-size: 2em;
+    }
+    .customers_reviews .col_30
+    {
+        font-size: 14px;
+    }
+    .grid_name
+    {
+        font-size: 1.5em;
+    }
+    .footer span
+    {
+        font-size: 2em;
+    }
     .footer .col_30
     {
         width: 90%;
+    }
+    .footer .col_30 .title
+    {
+        font-size: 2em;
+    }
+    .footer_description
+    {
+        width: 100%;
     }
 }
