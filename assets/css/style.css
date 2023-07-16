@@ -1,0 +1,401 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'CatchyMager';
+    src: url('../fonts/CatchyMager/CatchyMager-Normal.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: 'coco-gothic';
+    src: url('../fonts/coco-gothic/coco-gothic.regular.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Minerva Modern';
+    src: url('../fonts/minerva-modern/T-26 - Minerva Modern Regular.otf') format('opentype');
+}
+
+body
+{
+    font-family: 'CatchyMager';
+}
+
+.main
+{
+    display: grid;
+    place-content: center;
+    text-align: center;
+    min-height: 100vh;
+    background-image: url(../img/resort2.jpg);
+    background-size: cover;
+    background-position: center;
+    filter: sepia(50%);
+    color: white;
+}
+
+.main_welcome
+{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 30px;
+}
+
+.main_title
+{
+    font-size: 8rem;
+}
+
+.main_description
+{
+    font-size: 3.5rem;
+}
+
+.main_button
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 100px;
+    margin: auto;
+    width: 200px;
+    height: 40px;
+    background-color: white;
+    font-size: 13px;
+    font-weight: bold;
+    color: brown;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: 'coco-gothic';
+}
+
+section
+{
+    display: flex;
+    min-height: 100vh;
+    padding: 40px;
+    font-family: 'Minerva modern';
+    color: #623e2a;
+}
+.banner
+{
+    background-color: #f4f1ed;
+}
+
+.col50 {
+    margin: auto;
+    width: 45%;
+}
+
+.col50_title
+{
+    font-size: 60px;
+}
+
+.col50_text
+{
+    margin-top: 20px;
+    line-height: 25px;
+}
+
+
+.img_col50
+{
+    width: 400px;
+    height: 520px;
+    background-image: url(../img/love.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 90% 10% 90% 10% / 15% 85% 15% 85%;
+}
+
+.accommodations
+{
+    background-color: #efebe5;
+    display: grid;
+}
+
+.accommodations span
+{
+    font-size: 50px;
+    text-align: center;
+}
+
+.grid
+{
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Minerva Modern';
+}
+
+.grid img
+{
+    width: 400px;
+}
+
+.grid_description
+{
+    border: 1px solid;
+    height: 200px;
+    padding: 20px;
+}
+
+.grid_users
+{
+    margin-bottom: 40px;
+}
+  
+.grid_name
+{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.suite
+{
+    background-color: #f4f1ed;
+}
+
+.suite .col50_title
+{
+    margin-bottom: 150px;
+}
+
+img
+{
+    width: 100%;
+    height: auto;
+}
+
+.col_2_description
+{
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid;
+    text-align: center;
+    font-style: italic;
+}
+
+.room_services
+{
+    background-color: #f4f1ed;
+}
+
+.room_services .col_1
+{
+    width: 30%;
+}
+
+.room_services .col_2
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.promos
+{
+    background-color: #efebe5;
+    display: grid;
+}
+
+.promos span
+{
+    font-size: 50px;
+    text-align: center;
+}
+
+.promos .grid_description
+{
+    width: 400px;
+}
+
+.customers_reviews
+{
+    background-image: url(../img/background_customers.jpg);
+    background-size: cover;
+    filter: sepia(50%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.customers_reviews span
+{
+    font-size: 75px;
+    font-family: 'CatchyMager';
+    margin-top: 100px;
+}
+.customers_reviews_text
+{
+    display: flex;
+}
+.customers_reviews .col_30
+{
+    padding: 50px;
+    margin: 40px;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    background-color: rgba(98, 62, 42, 0.7);
+}
+
+.footer
+{
+    background-color: #623e2a;
+    color: white;
+    display: grid;
+    /* padding: 90px; */
+}
+
+.footer span
+{
+    font-size: 50px;
+    margin: auto;
+    font-family: 'Catchymager';
+}
+
+.footer .col_30
+{
+    border: 1px solid;
+    width: 30%;
+    margin: auto;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer_box
+{
+    display: flex;
+}
+
+.footer_box article
+{
+    margin: 10px;
+    padding: 50px;
+}
+
+.footer_box .col_30 .title
+{
+    font-size: 30px;
+}
+
+.sci
+{
+    display: flex;
+    list-style: none;
+    margin-bottom: 50px;
+}
+
+.sci li a i {
+    display: grid;
+    place-content: center;
+    width: 80px;
+    height: 80px;
+    font-size: 45px;
+    border-radius: 50%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    color: #eeeeee;
+    transform: scale(0.6);
+}
+
+.footer p
+{
+    text-align: center;
+}
+
+.footer_description
+{
+    width: 50%;
+    margin: auto;
+}
+
+.developed_by
+{
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+footer .developed_by, a
+{
+    text-decoration: none;
+    color: gray;
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .banner
+    {
+        display: grid;
+    }
+    .grid
+    {
+        display: grid;
+        gap: 35px;
+    }
+    .suite
+    {
+        display: grid;
+        gap: 30px;
+
+    }
+    .room_services
+    {
+        display: grid;
+        gap: 30px;
+    }
+    .customers_reviews_text
+    {
+        display: grid;
+        justify-items: center;
+    }
+    .customers_reviews .col_30
+    {
+        width: 50%;
+    }
+    .footer_box
+    {
+        display: grid;
+        gap: 30px;
+        margin-bottom: 30px;
+    }
+    .footer .sci
+    {
+        justify-content: center;
+    }
+    .footer .sci li a i
+    {
+        width: 60px;
+        height: 60px;
+        font-size: 35px;
+    }
+    .footer .col_30
+    {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width:768px){
+    .main
+    {
+
+    }
+    .customers_reviews .col_30
+    {
+        width: 100%;
+    }
+    .footer .col_30
+    {
+        width: 90%;
+    }
+}
