@@ -439,6 +439,10 @@ footer .developed_by, a
     {
         font-size: 14px;
     }
+    .grid img
+    {
+        width: 90%;
+    }
     .grid_name
     {
         font-size: 1.5em;
