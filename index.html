@@ -9,13 +9,37 @@
 </head>
 <body>
     <header>
+        <div class="logo">
+            <a href="#"><img class="logo_img" src="assets/img/logo2.png" alt=""></a>
+        </div>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+            <ul class="navigation">
+                <li>
+                    <a href="#accueil_banner">Accueil</a>
+                </li>
+                <li>
+                    <a href="#mission">Chambres</a>
+                </li>
+                <li>
+                    <a href="contact.html">Réservation</a>
+                </li>
+                <li>
+                    <a href="contact.html">S'inscrire</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
         <div class="main">
             <div class="main_text">
                 <p class="main_welcome">
-                    <span>Welcome to</span>
+                    <span>Bienvenue au</span>
                 </p>
                 <p class="main_title">
-                    <span>The Paradise</span>
+                    <span>Paradise</span>
                 </p>
                 <p class="main_description">
                     <span>Resort & spa Hotel</span>
@@ -27,7 +51,7 @@
                 </span>
             </div>
         </div>
-    </header>
+    </main>
     <section class="banner">
         <div class="col50">
             <p class="col50_title">
@@ -41,24 +65,24 @@
         </div>
     </section>
     <section class="accommodations">
-        <span>
+        <span class="acco_title">
             Hébergement
         </span>
         <div class="grid">
             <div>
-                <img src="assets/img/room1.jpg" alt="Image 1">
+                <img src="assets/img/room2.jpg" alt="Image 1">
                 <div class="grid_description">
                     <p class="grid_users">2 adultes | 1 enfant (-7 ans)</p>
                     <p class="grid_name">Chambre Deluxe</p>
-                    <p>à partir de 189€/nuit</p>
+                    <p class="grid_users">à partir de 189€/nuit</p>
                 </div>
             </div>
             <div>
-                <img src="assets/img//room2.jpg" alt="Image 2">
+                <img src="assets/img//room1.jpg" alt="Image 2">
                 <div class="grid_description">
                     <p class="grid_users">2 adultes | 1 enfant (-7 ans)</p>
                     <p class="grid_name">Chambre Deluxe Vue sur Mer</p>
-                    <p>à partir de 209€/nuit</p>
+                    <p class="grid_users">à partir de 209€/nuit</p>
                 </div>
             </div>
             <div>
@@ -66,7 +90,7 @@
                 <div class="grid_description">
                     <p class="grid_users">4 adultes | 2 enfants (-7 ans)</p>
                     <p class="grid_name">Suite Familiale The Paradise</p>
-                    <p>à partir de 399€/nuit</p>
+                    <p class="grid_users">à partir de 399€/nuit</p>
                 </div>
             </div>
         </div>
@@ -90,25 +114,22 @@
             <img src="assets/img/room3.jpg" alt="">
             <div class="col_2_description">
                 <p>
-                    An intriguing caption that describes the room goes here.
-                </p>
-                <p>
-                    Use a flattering photo, then describe away!
+                    Créez des souvenirs inoubliables en famille : Découvrez notre suite paradisiaque, le nid douillet pour des vacances mémorables !
                 </p>
             </div>
         </div>
     </section>
     <section class="room_services">
         <div class="col50 col_1">
-            <img src="assets/img/sea.jpg" alt="">
+            <img src="assets/img/tree.jpg" alt="">
             <p class="col_2_description">
-                An intriguing caption that describes the room goes here. Use a flattering photo, then describe away!
+                Découvrez notre oasis exotique, où les cocotiers s'étendent à perte de vue, créant un décor enchanteur pour des moments magiques.
             </p>
         </div>
         <div class="col50 col_2">
             <img src="assets/img/bathroom.jpg" alt="">
             <p class="col_2_description">
-                An intriguing caption that describes the room goes here. Use a flattering photo, then describe away!
+                Plongez dans un voyage sensoriel dès votre réveil, où la magie de l'océan vous transporte vers une journée empreinte d'émerveillement.
             </p>
         </div>
     </section>
@@ -121,14 +142,15 @@
                 <img src="assets/img/booking.jpg" alt="Image 1">
                 <div class="grid_description">
                     <p class="grid_name">Réduction pour réservation anticipée</p>
-                    <p>List your offers, promos, or special membership privileges and perks here to entice people to book your property.</p>
+                    <p class="grid_users">Ne manquez pas notre offre de réduction pour réservation anticipée et réservez dès maintenant pour bénéficier des meilleurs tarifs.
+                    </p>
                 </div>
             </div>
             <div>
-                <img src="assets/img//club.jpg" alt="Image 2">
+                <img src="assets/img/club.jpg" alt="Image 2">
                 <div class="grid_description">
                     <p class="grid_name">Avantages exclusifs du Club Paradise</p>
-                    <p>List your offers, promos, or special membership privileges and perks here to entice people to book your property.
+                    <p class="grid_users">Pour vos transferts vers l'aéroport, des visites touristiques ou des déplacements en ville, nous nous occupons de tout. 
                     </p>
                 </div>
             </div>
@@ -136,7 +158,7 @@
                 <img src="assets/img/stay.jpg" alt="Image 3">
                 <div class="grid_description">
                     <p class="grid_name">Promotion : Séjour de 3 nuits, 1 nuit offerte</p>
-                    <p>List your offers, promos, or special membership privileges and perks here to entice people to book your property.
+                    <p class="grid_users">Offrez-vous une escapade prolongée avec notre promotion exclusive, pour profiter pleinement de tout ce que notre hôtel a à offrir.
                     </p>
                 </div>
             </div>
@@ -175,10 +197,10 @@
                     <br>
                     Belle Terre, 99202</p>
                 <p><i class="fa-solid fa-phone"></i> 1234-5678-9012</p>
-                <p><i class="fa-solid fa-envelope"></i>theparadiseresort@contact.com</p>
+                <p><i class="fa-solid fa-envelope"></i> theparadiseresort@contact.com</p>
             </article>
             <article class="col_30">
-                <p class="title">Horaires</p>
+                <p class="title">Réception</p>
                 <p>Lundi au Vendredi
                     <br>
                     9:00 à 18:00
@@ -199,7 +221,8 @@
                 </ul>
             </article>
         </div>
-        <p class="footer_description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus sint, consequuntur tempore, cupiditate enim libero dicta eveniet totam non et aspernatur repellat fugit error voluptates dignissimos pariatur autem hic quae!</p>
+        <p class="footer_description">
+            Explorez l'inconnu et laissez-vous surprendre par des merveilles insoupçonnées.</p>
         <p class="developed_by">Développé par <a style="margin-left: 3px" href="https://portfolio-alex22405.vercel.app/" target="_blank"> Alexandre
             Vigon <i class="fa-solid fa-heart fa-beat"></i></p>
     </section>

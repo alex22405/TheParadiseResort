@@ -5,6 +5,13 @@
     box-sizing: border-box;
 }
 
+:root
+{
+    --fs-title: 50px;
+    --fs-subtitle: 30px;
+    --fs-text: 15px;
+}
+
 @font-face {
     font-family: 'CatchyMager';
     src: url('../fonts/CatchyMager/CatchyMager-Normal.ttf') format('opentype');
@@ -26,6 +33,54 @@ body
     overflow-x: hidden;
 }
 
+/* ------------- NAVBAR -------------- */
+
+.logo_img {
+    max-height: 200px;
+}
+
+header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-height: 100px;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1.1px;
+    transition: 0.5s;
+}
+
+header .navigation {
+    display: flex;
+    position: relative;
+}
+
+header .navigation li {
+    position: relative;
+    list-style: none;
+    margin-left: 15px;
+}
+
+header .navigation li a {
+    text-decoration: none;
+    color: #bd8334;
+    padding: 10px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    border: 1px solid #bd8334;
+    display: inline-block;
+    transition-property: transform;
+    transition-duration: 0.5s;
+}
+
+header .navigation li a:hover {
+    transform: scale(1.11);
+}
+
 .main
 {
     display: grid;
@@ -37,12 +92,11 @@ body
     background-position: center;
     filter: sepia(50%);
     color: white;
-    overflow: hidden;
 }
 
 .main_welcome
 {
-    font-size: 1.5rem;
+    font-size: var(--fs-title);
     text-transform: uppercase;
     letter-spacing: 5px;
     margin-bottom: 30px;
@@ -97,13 +151,19 @@ section
 
 .col50_title
 {
-    font-size: 60px;
+    font-size: var(--fs-title);
+}
+
+.col50 p
+{
+    font-size: var(--fs-text);
 }
 
 .col50_text
 {
     margin-top: 20px;
     line-height: 25px;
+    font-size: var(--fs-text);
 }
 
 
@@ -152,11 +212,12 @@ section
 .grid_users
 {
     margin-bottom: 40px;
+    font-size: var(--fs-text);
 }
   
 .grid_name
 {
-    font-size: 30px;
+    font-size: var(--fs-subtitle);
     margin-bottom: 20px;
 }
 
@@ -168,7 +229,9 @@ section
 .suite .col50_title
 {
     margin-bottom: 150px;
+    font-size: var(--fs-title);
 }
+
 
 img
 {
@@ -190,11 +253,6 @@ img
     background-color: #f4f1ed;
 }
 
-.room_services .col_1
-{
-    width: 30%;
-}
-
 .room_services .col_2
 {
     display: flex;
@@ -210,7 +268,7 @@ img
 
 .promos span
 {
-    font-size: 50px;
+    font-size: var(--fs-title);
     text-align: center;
 }
 
@@ -233,7 +291,7 @@ img
 
 .customers_reviews span
 {
-    font-size: 75px;
+    font-size: var(--fs-title);
     font-family: 'CatchyMager';
     margin-top: 100px;
 }
@@ -259,7 +317,7 @@ img
 
 .footer span
 {
-    font-size: 50px;
+    font-size: var(--fs-title);
     margin: auto;
     font-family: 'Catchymager';
 }
@@ -288,7 +346,7 @@ img
 
 .footer_box .col_30 .title
 {
-    font-size: 30px;
+    font-size: var(--fs-subtitle);
 }
 
 .sci
@@ -337,7 +395,7 @@ footer .developed_by, a
 
 
 /* Responsive Design */
-@media screen and (max-width: 1024px) {
+@media screen  and (max-width: 1291px) {
     .banner
     {
         display: grid;
@@ -393,6 +451,54 @@ footer .developed_by, a
     }
 }
 
+
+@media screen and (max-width:991px) {
+    /* <!--------------- NAVBAR ----------------> */
+    .logo_img {
+        max-height: 150px;
+    }
+    header,
+    header.sticky {
+        padding: 10px 20px;
+    }
+
+    header .navigation {
+        display: none;
+    }
+
+
+    header .navigation li {
+        margin-left: 0;
+    }
+
+    header .navigation li a {
+        text-decoration: none;
+        color: #111;
+        font-size: 1.6em;
+        font-weight: 300t;
+    }
+
+    .menuToggle {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(../img/icon-menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+
+    .menuToggle.active {
+        background: url(..//img/croix-icon.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+}
+
+
 @media screen and (max-width:768px){
     .main_welcome
     {
@@ -431,10 +537,16 @@ footer .developed_by, a
     {
         width: 100%;
     }
+    .promos
+    {
+        padding: 10px;
+        font-size: small;
+    }
     .promos span
     {
         font-size: 2em;
     }
+
     .customers_reviews span
     {
         font-size: 2em;
@@ -449,7 +561,7 @@ footer .developed_by, a
     }
     .grid_name
     {
-        font-size: 1.5em;
+        font-size: 1.4rem;
     }
     .footer span
     {
@@ -466,5 +578,33 @@ footer .developed_by, a
     .footer_description
     {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px)
+{
+    .promos
+    {
+        /* padding: 50px; */
+    }
+    .grid_name
+    {
+        font-size: 20px;
+    }
+    .grid_users
+    {
+        font-size: 12px;
+    }
+    .grid_description p
+    {
+        margin-left: 40px;
+    }
+    .col_30 p
+    {
+        font-size: 12px;
+    }
+    .footer
+    {
+        margin-left: -40px;
     }
 }
