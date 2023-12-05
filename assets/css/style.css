@@ -456,6 +456,7 @@ footer .developed_by, a
     /* <!--------------- NAVBAR ----------------> */
     .logo_img {
         max-height: 150px;
+        width: 150px;
     }
     header,
     header.sticky {
